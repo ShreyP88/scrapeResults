@@ -8,7 +8,7 @@ consumerSecret = " "
 accessToken = " "
 accessTokenSecret = ""
 
-auth = tweepy.0AuthHandler(consumerKey, consumerSecret)
+auth = tweepy.OAuthHandler(consumerKey, consumerSecret)
 auth.set_access_token(accessToken, accessTokenSecret)
 api = tweepy.API(auth,wait_on_rate_limit = True)
 
